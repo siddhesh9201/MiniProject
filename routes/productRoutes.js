@@ -12,8 +12,10 @@ routes.post('/',(req,res)=>{
 // get all product
 routes.get('/',async(req,res)=>{
      const sql = `SELECT * FROM products`
+     console.log("hello")
     try{
         const data = await pool.query(sql)
+        
         res.send(data[0][0])
     }catch(error){
         res.send(error)
@@ -26,20 +28,20 @@ routes.get('/',(req,res)=>{
 })
 
 
-//	Update product
-routes.put('/',(req,res)=>{
-    res.send("product Get ReQ")
-})
+// //	Update product
+// routes.put('/',(req,res)=>{
+//     res.send("product Get ReQ")
+// })
 
-//	Delete product
-routes.delete('/',(req,res)=>{
-    res.send("product Get ReQ")
-})
+// //	Delete product
+// routes.delete('/',(req,res)=>{
+//     res.send("product Get ReQ")
+// })
 
 
-// Search by name
-routes.get('/',(req,res)=>{
-    res.send("product Get ReQ")
-})
+// // Search by name
+// routes.get('/',(req,res)=>{
+//     res.send("product Get ReQ")
+// })
 
 module.exports = routes
