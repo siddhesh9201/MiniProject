@@ -7,5 +7,5 @@ userRouts.post('/user/signin',(req,res)=>{
 
 
 userRouts.post('/user/signup',(req,res)=>{
-    const sql = 'INSERT INTO users ()'
+    const sql = 'INSERT INTO users (id,name,email,password) VALUES (?,?,?,?)'
 })
