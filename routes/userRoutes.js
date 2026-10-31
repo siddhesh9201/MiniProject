@@ -1,5 +1,6 @@
 const express = require('express')
      userRouts=express.Router();
+const pool = require('../db/pool')
 
 userRouts.post('/user/signin',(req,res)=>{
         const sql = ''
@@ -7,5 +8,12 @@ userRouts.post('/user/signin',(req,res)=>{
 
 
 userRouts.post('/user/signup',(req,res)=>{
-    const sql = 'INSERT INTO users (id,name,email,password) VALUES (?,?,?,?)'
+    const{name,email,password} =req.body
+    const sql = 'INSERT INTO users (name,email,password) VALUES (?,?,?,?)'
+    try{
+           pool.
+    }catch(error){
+       
+    }   
+
 })
