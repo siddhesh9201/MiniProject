@@ -20,21 +20,21 @@ routes.get('/',async(req,res)=>{
     }
 })
 
-//Get product by ID
-routes.get('/',(req,res)=>{
-    res.send("product Get ReQ")
-})
+// //Get product by ID
+// routes.get('/',(req,res)=>{
+//     res.send("product Get ReQ")
+// })
 
 
-//	Update product
-routes.put('/',(req,res)=>{
-    res.send("product Get ReQ")
-})
+// //	Update product
+// routes.put('/',(req,res)=>{
+//     res.send("product Get ReQ")
+// })
 
-//	Delete product
-routes.delete('/',(req,res)=>{
-    res.send("product Get ReQ")
-})
+// //	Delete product
+// routes.delete('/',(req,res)=>{
+//     res.send("product Get ReQ")
+// })
 
 
 // Search by name

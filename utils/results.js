@@ -10,3 +10,5 @@ function createErrorResult(error){
       error ={status:`error`, error}
       return error;
 }
+
+module.exports={createSuccessResult,createErrorResult}
